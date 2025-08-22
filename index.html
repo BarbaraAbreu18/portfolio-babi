@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bárbara Abreu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400.
+  .900&family=Playwrite+CA:wght@100..400&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @font-face {
+      font-family: 'Adelia';
+      src: url('fonts/adelia_3\ \(3\).zip') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'California Vibes';
+      src: url('fonts/california_vibes\ \(1\).zip') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%;
+
+    }
+
+    header {
+      height: 900px;
+      width: 100%;
+      background-image: url(img/portfolio-capa.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      width: 90%;
+      max-width: 1750px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 40px;
+      padding: 0 40px;
+    }
+
+    .nome {
+      display: flex;
+      font-family: 'Adelia';
+      font-size: 30px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 60px;
+      margin-left: auto;
+    }
+
+    .item-1 {
+      font-family: 'California Vibes';
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      font-family: 'California Vibes';
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #38d8f8;
+    }
+
+    .design-grafico {
+      width: 100%;
+      max-width: 2000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+    }
+
+    .quadros {
+      max-width: 100%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 70px auto;
+      justify-content: space-around;
+    }
+
+    .quadro-1 {
+      background-color: #2b89e2;
+      width: 500px;
+      height: 500px;
+      border-radius: 40px;
+    }
+
+    .quadro-1 :hover {
+      background-color: #2b89e2;
+    }
+
+    .quadro-1 a {
+      transition: color 0.3s ease;
+      padding: 3px;
+    }
+
+    .quadro-1:hover a {
+      color: white;
+    }
+
+    .quadro-2 {
+      background-color: #83c3ff;
+      width: 250px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 60px auto;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+      line-height: 1;
+    }
+
+    .quadro-2:hover {
+      background-color: hwb(202 13% 21%);
+    }
+
+    .quadro-2 a {
+      text-decoration: none;
+      color: black;
+      font-family: 'California Vibes';
+      font-size: 45px;
+      transition: color 0.3s ease;
+      padding: 3px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .quadro-2:hover a {
+      color: white;
+    }
+
+    .sobre {
+      width: 100%;
+    }
+
+    .quadro-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 100%;
+      max-width: 1500px;
+      height: 500px;
+      border-radius: 40px;
+      text-decoration: none;
+      padding: 3px;
+      margin: 60px auto 60px auto;
+    }
+
+    .quadro-babi {
+      background-color: #2b89e2;
+      width: 1500px;
+      height: 500px;
+      border-radius: 40px;
+      transition: background-color 0.3s ease;
+      line-height: 1;
+    }
+
+    .rodape {
+      background-color: #83c3ff;
+      width: 100%;
+      height: 600px;
+      font-family: 'California Vibes', sans-serif;
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+    }
+
+    .rodape-conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 50px;
+    }
+
+    .rodape-texto {
+      font-size: 70px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .rodape-email {
+      font-size: 70px;
+      color: rgb(0, 0, 0);
+    }
+
+    .rodape-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .rodape-links a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #000;
+      font-family: 'California Vibes', sans-serif;
+      transition: color 0.3s;
+    }
+
+    .rodape-links a:hover {
+      color: #2b89e2;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div class="nome">Bárbara Abreu</div>
+      <ul class="menu">
+        <li class="item-1">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="item-1">
+          <a href="projetos.html">Projetos</a>
+        </li>
+        <li class="item-1">
+          <a href="sobre.html">Sobre</a>
+        </li>
+        <li class="item-1">
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="design-grafico">
+    <img src="img/azul.png" alt="">
+  </div>
+
+  <div class="quadros">
+    <a href="projeto-1.html" class="quadro-1"></a>
+    <a href="projeto-2.html" class="quadro-1"></a>
+    <a href="projeto-3.html" class="quadro-1"></a>
+  </div>
+
+  <div class="quadro-2">
+    <a href="projetos.html">Mais Projetos</a>
+
+  </div>
+
+  <div class="sobre">
+    <img src="img/sobre-mim.png" alt="">
+  </div>
+
+  <div class="sobre-mim">
+    <a href="sobre.html" class="quadro-link">
+      <div class="quadro-babi"></div>
+    </a>
+  </div>
+
+
+  <footer>
+    <div class="rodape">
+      <div class="rodape-conteudo">
+        <div class="rodape-texto">ENTRE EM CONTATO COMIGO!</div>
+        <div class="rodape-email">BARBARAABREUSILVA10@GMAIL.COM</div>
+        <ul class="rodape-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5512991218154" target="_blank" class="whatsapp-float">
+    <img src="img/—Pngtree—whatsapp icon_8704827.png" alt="WhatsApp" style="width: 100%; height: 100%;">
+  </a>
+</body>
+
+</html>
