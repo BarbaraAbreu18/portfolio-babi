@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'adelia';
+  src: url('/fonts/adelia.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'California Vibes';
+  src: url('/fonts/CaliforniaVibes.otf') format('opentype');
+}
